@@ -1,0 +1,45 @@
+{
+    "name": "fe-vue-3-vite-5-components",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite --host",
+        "build": "vite build",
+        "preview": "vite preview",
+        "server": "nodemon ./server/index.js"
+    },
+    "dependencies": {
+        "@element-plus/icons-vue": "^2.3.1",
+        "axios": "^1.10.0",
+        "cors": "^2.8.5",
+        "d3": "^7.9.0",
+        "echarts": "^5.6.0",
+        "element-plus": "^2.10.4",
+        "express": "^5.1.0",
+        "fs-extra": "^11.3.0",
+        "gsap": "^3.13.0",
+        "hls.js": "^1.6.7",
+        "howler": "^2.2.4",
+        "http-errors": "^2.0.0",
+        "http-status-codes": "^2.3.0",
+        "jquery": "^3.7.1",
+        "mitt": "^3.0.1",
+        "monaco-editor": "^0.52.2",
+        "morgan": "^1.10.0",
+        "pinia": "^3.0.3",
+        "pinia-plugin-persistedstate": "^4.4.1",
+        "video.js": "^8.23.3",
+        "vue": "^3.5.17",
+        "vue-router": "^4.5.1"
+    },
+    "devDependencies": {
+        "@types/node": "^24.0.13",
+        "@vitejs/plugin-vue": "^6.0.0",
+        "concurrently": "^9.2.0",
+        "sass-embedded": "^1.89.2",
+        "typescript": "^5.8.3",
+        "vite": "^7.0.4",
+        "vite-plugin-dts": "^4.5.4"
+    }
+}

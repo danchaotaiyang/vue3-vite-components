@@ -1,7 +1,7 @@
 <script setup>
 import { computed, provide } from 'vue';
 import { useRoute } from 'vue-router';
-import SubMenu from './SubMenu.vue';
+import SubMenu from './SubMenuComposition.vue';
 
 
 provide('SubMenu', { SubMenu });

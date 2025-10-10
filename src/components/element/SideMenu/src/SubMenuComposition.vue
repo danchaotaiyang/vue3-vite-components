@@ -25,13 +25,13 @@ const menu = computed(() => {
     return props.data;
 });
 
-const isSub = computed(() => {
+const hasSubMenu = computed(() => {
     return Array.isArray(menu.value[ 'children' ]) && menu.value[ 'children' ].length;
 });
 </script>
 
 <template>
-<el-sub-menu v-if="isSub" :index="menu[ props.prop[ 'value' ] ]">
+<el-sub-menu v-if="hasSubMenu" :index="menu[ props.prop[ 'value' ] ]">
     <template #title>{{ menu[ props.prop[ 'label' ] ] }}</template>
     <template v-for="(item, index) in menu[ props.prop[ 'children' ] ]" :key="index">
     <SubMenu :data="item"></SubMenu>
@@ -42,7 +42,7 @@ const isSub = computed(() => {
 </el-tooltip>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .el-menu-item {
     margin-bottom: 0;
 

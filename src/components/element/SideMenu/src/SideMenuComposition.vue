@@ -38,7 +38,7 @@ const menu = computed(() => {
 </el-menu>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .side-menu {
     padding: 5px 0 28px;
     border: none;

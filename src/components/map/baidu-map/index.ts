@@ -10,5 +10,3 @@ const BaiduMapComponent = {
 };
 
 export default BaiduMapComponent;
-
-export const BaiduMap = BaiduMapComposition;

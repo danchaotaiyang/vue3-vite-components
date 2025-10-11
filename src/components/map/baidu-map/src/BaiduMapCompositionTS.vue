@@ -1477,18 +1477,6 @@ const createPoint = (coords: [ number, number ]) => {
     logger.warn(`无法创建百度地图点，坐标无效: ${ coords }`);
     return null;
 };
-
-/**
- * 转义HTML内容，防止XSS攻击
- * @param {string} str 需要转义的字符串
- * @returns {string} 转义后的字符串
- */
-const escapeHTML = (str: string): string => {
-    const div: any = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
-};
-
 /**
  * 创建标签对象
  * @param {Object} labelData 标签数据

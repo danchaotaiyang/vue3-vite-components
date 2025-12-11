@@ -45,7 +45,6 @@ const styleRef = computed(() => {
     };
 });
 
-const { mode, fftSize, width, height } = props;
 
 const soundViewRef = ref();
 const audioPlayerRef = ref();
@@ -83,6 +82,8 @@ const createAudio = () => {
 
 const createAnalyser = () => {
 
+    const { mode, fftSize, width, height } = props;
+
     canvasRef.value.width = width;
     canvasRef.value.height = height;
     let canvasContext = canvasRef.value.getContext('2d');
@@ -99,7 +100,7 @@ const createAnalyser = () => {
             let __bar__height__ = 0;
             let d = anyInstance.data[ i ];
             let x = i * __bar_width__;
-            switch (props.mode) {
+            switch (mode) {
                 case 'byteFrequency': {
                     __bar__height__ = d / 2;
                     break;
